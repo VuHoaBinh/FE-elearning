@@ -1,0 +1,36 @@
+.wrapper {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  .box-question {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #d3d3d3;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.question-answered {
+  background-color: #3aca5c50 !important;
+  border-color: #3aca5c50 !important;
+}
+
+.question-active {
+  border-color: #ffa50090 !important;
+}
+
+.btn-icon-checked {
+  position: absolute;
+  color: #3aca5c !important;
+  width: 14px;
+  right: -2px;
+  bottom: -6px;
+}

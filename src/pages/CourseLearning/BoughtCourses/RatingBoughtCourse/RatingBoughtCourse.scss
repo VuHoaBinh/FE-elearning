@@ -1,0 +1,18 @@
+.editor {
+  height: 200px;
+
+  & > h2 {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    margin-bottom: 4px;
+
+    & > span {
+      color: red;
+    }
+  }
+
+  .ql-container {
+    height: 120px;
+  }
+}

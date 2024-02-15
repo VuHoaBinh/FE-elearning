@@ -1,0 +1,18 @@
+.new {
+  height: 32px;
+  padding: 8px;
+  position: relative;
+
+  &:hover {
+    & > .icon {
+      visibility: visible;
+    }
+  }
+
+  & > .icon {
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+    visibility: hidden;
+  }
+}

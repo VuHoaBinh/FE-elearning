@@ -1,0 +1,77 @@
+.message-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  > .receiver {
+    padding: 9px;
+    background: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-bottom: 1px solid rgb(180, 174, 174);
+
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    > .receiver-info {
+      display: flex;
+      flex-direction: column;
+      line-height: 22px;
+      > .name {
+        font-weight: 700;
+        cursor: pointer;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      > .role {
+        font-size: 14px;
+      }
+    }
+  }
+
+  > .chat-content {
+    height: 380px;
+    overflow-y: scroll;
+
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  > .chat-handle {
+    padding: 0 20px;
+
+    display: flex;
+    flex-direction: row;
+
+    gap: 5px;
+    > .input-text {
+      flex: 1;
+    }
+    > div {
+      > label {
+        cursor: pointer;
+        > img {
+          height: 50px;
+          width: 50px;
+          border: 1px solid rgb(220, 220, 220);
+        }
+      }
+    }
+  }
+}
+
+.message-block {
+  height: 90%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-text {
+    line-height: 20px;
+    font-weight: 700;
+  }
+}

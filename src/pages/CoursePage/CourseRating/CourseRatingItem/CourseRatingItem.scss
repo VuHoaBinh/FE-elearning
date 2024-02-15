@@ -1,0 +1,33 @@
+.course-rating-item {
+  border: 1px solid rgb(226, 222, 222);
+  border-radius: 2px;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  > .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    > .name {
+      font-weight: 600;
+    }
+
+    > .date {
+      background: red;
+      padding: 2px 10px;
+      color: white;
+      font-size: 14px;
+      font-weight: 700;
+      border-radius: 6px;
+    }
+  }
+  > .rating-info {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+  }
+}

@@ -1,0 +1,85 @@
+.courses-detail {
+  max-width: 1400px;
+
+  margin: 0 auto;
+  margin-top: 20px;
+
+  > .course-preview {
+    padding: 0 20px;
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+
+    > .info {
+      min-width: 300px;
+      width: 45%;
+
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      position: relative;
+
+      > .sale-off {
+        position: absolute;
+        right: 0;
+
+        background: red;
+        color: white;
+        font-weight: 700;
+        padding: 10px;
+      }
+
+      > img {
+        width: 100%;
+        height: 300px;
+      }
+    }
+    .content-detail {
+      width: 40%;
+      min-width: 400px;
+
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+
+      > .detail-info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        
+
+        > .sell-number {
+          display: flex;
+          flex-direction: row;
+          gap: 20px;
+        }
+
+        > .flex-row {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .courses-detail {
+    padding: 2px;
+    > .course-preview {
+      flex-direction: column;
+
+      .content-detail,
+      .info {
+        width: 100%;
+        min-width: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.teacher-course-detail {
+  padding-top: 100px;
+
+  &-content {
+    position: absolute;
+    left: 260px;
+
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: white;
+    padding: 12px;
+    border-radius: 16px;
+
+    width: calc(100% - 280px);
+  }
+}

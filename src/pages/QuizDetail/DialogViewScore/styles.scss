@@ -1,0 +1,15 @@
+.dialog-view-score {
+  .MuiDialogTitle-root {
+    font-size: 30px !important;
+    text-align: center;
+  }
+
+  .MuiDialogContent-root {
+    text-align: center;
+    margin: 30px 0 50px;
+    .MuiTypography-root {
+      font-size: 45px !important;
+      color: #2c9044;
+    }
+  }
+}

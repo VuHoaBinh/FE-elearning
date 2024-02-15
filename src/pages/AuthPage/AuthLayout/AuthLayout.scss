@@ -1,0 +1,16 @@
+.auth-container {
+  width: 100vw;
+  height: 100vh;
+
+  // overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: url("https://th.bing.com/th/id/R.e00ce9216030ba729c7873cf2d57f25e?rik=O2GloT5uF%2bKkGg&pid=ImgRaw&r=0")
+    no-repeat center / cover;
+
+  padding: 10px;
+}

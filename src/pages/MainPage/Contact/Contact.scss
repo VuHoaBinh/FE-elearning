@@ -1,0 +1,9 @@
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  > .title {
+    font-weight: 600;
+    font-size: 32px;
+  }
+}

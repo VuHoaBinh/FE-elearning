@@ -1,0 +1,38 @@
+.notification {
+  position: relative;
+
+  > .unread_amount {
+    position: absolute;
+    left: 30px;
+    top: 0;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background: rgb(255, 0, 0);
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    user-select: none;
+  }
+
+  &-popover {
+    background: white;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    z-index: 2;
+
+    position: absolute;
+    top: calc(100% + 15px);
+    right: calc(100% - 150px);
+
+    width: 250px;
+  }
+}

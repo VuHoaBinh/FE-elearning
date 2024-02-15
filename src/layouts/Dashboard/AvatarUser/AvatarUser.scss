@@ -1,0 +1,32 @@
+.user {
+  display: flex;
+  gap: 20px;
+
+  padding: 10px 20px;
+  margin: auto;
+  // border-radius: 6px;
+  border-radius: 4px;
+
+  background: #edeff1;
+
+  // &-avatar {
+  // }
+
+  &-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    > .name {
+      font-size: 16px;
+      font-weight: 500;
+    }
+    > .role {
+      font-size: 16px;
+      font-weight: 500;
+      > span {
+        color: red;
+        font-weight: 500;
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.dashboard-header {
+  width: 100%;
+  background: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: 0 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  > .toggle {
+    width: 600px;
+    cursor: pointer;
+
+    //   display: flex;
+    //   flex-direction: row;
+    //   align-items: center;
+    //   gap: 20px;
+
+    > .logo-large-screen {
+      max-width: 200px;
+    width: 71px;
+    height: 75px;
+    margin-top: -3px;
+    margin-left: 50px;
+      background: url("../../../assets/images/logo.png")
+        no-repeat center / cover;
+    }
+
+    > .logo-small-screen {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 836px) {
+  .dashboard-header {
+    > .toggle {
+      > .logo-large-screen {
+        display: none;
+      }
+      > .logo-small-screen {
+        display: block;
+      }
+    }
+  }
+}

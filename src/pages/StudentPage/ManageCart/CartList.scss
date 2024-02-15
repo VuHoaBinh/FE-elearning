@@ -1,0 +1,40 @@
+.cart-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 100px;
+
+  > .cart-content {
+    display: flex;
+    gap: 50px;
+
+    > .cart-items {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      // gap: 1px;
+      gap: 5px;
+    }
+
+    > .cart-price {
+      position: sticky;
+      top: 15%;
+
+      // max-width: fit-content;
+      width: 280px;
+      height: fit-content;
+      border: 1px solid #d1d7dc;
+      padding: 20px;
+      border-radius: 6px;
+
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      > .note {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+}

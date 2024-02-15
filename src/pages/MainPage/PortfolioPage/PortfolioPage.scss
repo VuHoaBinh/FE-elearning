@@ -1,0 +1,69 @@
+.portfolio-page {
+  max-width: 1500px;
+
+  margin: 0 auto;
+  margin-top: 20px;
+  padding-bottom: 50px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  > .teacher-info {
+    width: 88%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    > .info {
+      display: flex;
+      flex-direction: row;
+      gap: 150px;
+      > .avatar-portfolio {
+        width: 200px;
+        height: 200px;
+      }
+
+      > .content {
+        max-width: 240px;
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        > .is-verify {
+          color: white;
+          font-weight: 700;
+          background: green;
+          width: fit-content;
+
+          padding: 4px 10px;
+
+          user-select: none;
+
+          &:hover {
+            opacity: 0.9;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .portfolio-page {
+    > .teacher-info {
+      > .info {
+        gap: 30px;
+
+        > .avatar-portfolio {
+          width: 120px;
+          height: 120px;
+        }
+      }
+    }
+  }
+}

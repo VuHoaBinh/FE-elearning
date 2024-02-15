@@ -1,0 +1,141 @@
+// teacher data column show
+.teacher-column-show {
+  display: flex;
+  flex-direction: column;
+  //   padding: 10px;
+
+  border: 1px solid rgb(202, 202, 202);
+
+  //data column
+  > .teacher-column-header {
+    display: flex;
+    flex-direction: row;
+
+    background: rgb(142, 112, 112);
+    font-weight: 600;
+    color: white;
+    > .month-name {
+      width: 120px;
+      padding: 4px;
+
+      border: 1px solid rgb(179, 179, 179);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    > .teacher-name {
+      flex: 1;
+      border: 1px solid rgb(179, 179, 179);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  //data row
+  > .teacher-row-show {
+    display: flex;
+    flex-direction: row;
+    cursor: default;
+    // border: 1px solid rgb(130, 130, 130);
+
+    &:nth-child(2n) {
+      background: rgb(227, 227, 227);
+    }
+    &:hover {
+      opacity: 0.8;
+    }
+
+    > .title-row {
+      width: 120px;
+      padding: 4px;
+      border: 1px solid rgb(179, 179, 179);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    > .data-row {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+
+      //   gap: 4px;
+
+      > .data-row-item {
+        padding: 10px;
+        flex: 1;
+        border: 1px solid rgb(179, 179, 179);
+      }
+    }
+  }
+}
+
+//teacher revenue detail
+.revenue-teacher-detail {
+  max-width: 1500px;
+  margin: 0 auto;
+  margin-top: 20px;
+
+  padding-bottom: 100px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .revenue-teacher-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    > .info {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 20px 10px;
+      > span {
+        width: 24%;
+      }
+    }
+  }
+  .revenue-teacher-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    > .content {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+}
+
+// revenue invoice item
+.revenue-invoice-item {
+  border: 1px solid rgb(215, 215, 215);
+  padding: 10px;
+
+  display: flex;
+  font-display: row;
+  gap: 50px;
+
+  > .thumbnail {
+    cursor: pointer;
+    &:hover {
+      > img {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  > .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    > span {
+      width: 35%;
+    }
+  }
+}

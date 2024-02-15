@@ -1,0 +1,38 @@
+.teacher-revenue {
+  // display: flex;
+  // flex-direction: column;
+  // gap: 30px;
+  max-width: 1500px;
+  margin: 0 auto;
+  margin-top: 20px;
+
+  padding-bottom: 100px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  .revenue-teacher-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    > .info {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 20px 10px;
+      > span {
+        width: 24%;
+      }
+    }
+  }
+  .revenue-teacher-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    > .content {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+}

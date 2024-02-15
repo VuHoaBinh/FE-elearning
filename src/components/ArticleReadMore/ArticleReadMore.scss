@@ -1,0 +1,47 @@
+.content-article {
+  height: 60px;
+  overflow: hidden;
+
+  font-size: 14px;
+  line-height: 20px;
+
+  &.show {
+    height: auto;
+  }
+
+  > p,
+  span {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    font-feature-settings: "salt" on;
+    margin-bottom: 20px;
+  }
+
+  > h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 20px;
+  }
+
+  > img,
+  iframe,
+  video {
+    max-width: 100%;
+  }
+}
+
+.btn-seeMore {
+  width: 100%;
+  font-feature-settings: "salt" on;
+
+  border: 1px solid rgb(220, 220, 220);
+  color: black;
+
+  &.show {
+    margin-top: 2px;
+  }
+}

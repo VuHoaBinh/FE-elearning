@@ -1,0 +1,11 @@
+.link-scroll {
+  cursor: pointer;
+  font-size: 16px;
+  color: black;
+  user-select: none;
+
+  &.active {
+    color: red;
+    font-weight: 500;
+  }
+}

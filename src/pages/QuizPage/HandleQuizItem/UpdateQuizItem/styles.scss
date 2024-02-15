@@ -1,0 +1,19 @@
+.modal-content-question {
+  max-height: 70vh;
+  overflow-y: scroll;
+  .block-question {
+    margin-bottom: 20px;
+    .block-answer {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.block-action {
+  display: flex;
+  justify-content: space-around;
+  button {
+    min-width: 170px;
+  }
+}

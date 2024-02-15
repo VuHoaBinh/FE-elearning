@@ -1,0 +1,15 @@
+.course-rating {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  > .title {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 600;
+  }
+  > .course-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

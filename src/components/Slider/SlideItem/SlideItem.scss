@@ -1,0 +1,14 @@
+.slide-item {
+  height: 600px;
+  margin: 0 20px;
+
+  &-banner {
+    z-index: -1;
+    transition: all 600ms;
+    opacity: 0.6;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}

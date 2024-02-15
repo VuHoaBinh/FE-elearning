@@ -1,0 +1,9 @@
+.main-page-element {
+  padding-top: 80px;
+}
+
+@media (max-width: 430px) {
+  .main-page-element {
+    padding-top: 60px;
+  }
+}

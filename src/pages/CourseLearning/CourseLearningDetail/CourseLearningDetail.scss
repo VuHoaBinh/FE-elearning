@@ -1,0 +1,67 @@
+.my-course-detail {
+  max-width: 1500px;
+  margin: 0 auto;
+  margin-top: 20px;
+
+  padding-bottom: 100px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  > .info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    > .title {
+      font-size: 24px;
+      font-weight: 600;
+    }
+    > .author {
+      font-size: 18px;
+      font-weight: 300;
+    }
+  }
+  > .my-course-video {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    > .stream {
+      max-width: 900px;
+      max-height: 600px;
+      height: 100%;
+      width: 100%;
+      > .content-quiz-student {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 300px;
+        .title-question-student {
+          margin: 20px 50px 0;
+        }
+        .action-question {
+          margin: auto;
+        }
+      }
+      > .content-slide {
+        > .preview-content-action {
+          display: flex;
+          justify-content: flex-end;
+          margin-bottom: 10px;
+          .button-download-file {
+            a {
+              color: #fff !important;
+            }
+          }
+        }
+        > .preview-content-view {
+          height: 100vh;
+        }
+      }
+    }
+    > .chapters {
+      flex: 1;
+    }
+  }
+}

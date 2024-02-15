@@ -1,0 +1,45 @@
+.user-item {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-bottom: 1px solid rgb(168, 166, 166);
+  padding: 10px 20px;
+
+  display: flex;
+  gap: 20px;
+
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &.active {
+    background: rgb(255, 238, 238);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+
+  > .user-info {
+    display: flex;
+    > span {
+      line-height: 20px;
+    }
+    > .name {
+      font-size: 16px;
+      font-weight: 600;
+    }
+    > .last-message {
+      font-size: 14px;
+      line-height: 20px;
+      width: 200px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      &.seen {
+        color: #2e3639;
+      }
+      &.unseen {
+        font-weight: 700;
+      }
+    }
+  }
+}

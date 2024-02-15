@@ -1,0 +1,19 @@
+.input-file {
+  & > input {
+    display: none;
+  }
+
+  & > label {
+    cursor: pointer;
+    width: fit-content;
+
+    & > img {
+      width: 120px;
+      height: 120px;
+      border-radius: 12px;
+      object-fit: cover;
+      background: white;
+      border: 1px dashed rgb(255, 255, 255);
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.course-payment-item {
+  border: 1px solid rgb(215, 215, 215);
+  padding: 10px;
+
+  display: flex;
+  font-display: row;
+  gap: 50px;
+  > .thumbnail {
+    cursor: pointer;
+    &:hover {
+      > img {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  > .content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 430px) {
+  .course-payment-item {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}

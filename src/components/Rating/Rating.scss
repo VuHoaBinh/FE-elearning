@@ -1,0 +1,12 @@
+.rating-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+
+  > .reviewers {
+    font-size: 10px;
+    font-weight: 600;
+    color: rgb(166, 125, 125);
+  }
+}
