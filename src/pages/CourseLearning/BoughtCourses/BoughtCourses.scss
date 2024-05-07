@@ -1,0 +1,31 @@
+.my-course {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  &-content {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 350px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px 30px;
+
+    .not-my-course {
+      width: 100%;
+
+      display: grid;
+      place-items: center;
+
+      font-size: 18px;
+      font-weight: 600;
+      color: red;
+    }
+  }
+  &-pagination {
+    margin-bottom: 100px;
+  }
+}

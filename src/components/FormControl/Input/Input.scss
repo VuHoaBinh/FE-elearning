@@ -1,0 +1,47 @@
+.input {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid rgb(224, 224, 224);
+  overflow: hidden;
+  transition: all 0.25s ease-in-out;
+
+  &:hover {
+    border: 1px solid rgb(188, 127, 188);
+  }
+
+  &.round {
+    border-radius: 12px;
+  }
+
+  &.focused {
+    background-color: white;
+    outline: 1px rgb(188, 127, 188);
+    border-color: rgb(188, 127, 188);
+  }
+
+  &.disabled {
+    border: 1px solid rgb(220, 220, 220);
+    opacity: 0.6;
+  }
+
+  &-form {
+    flex-grow: 1;
+    margin-bottom: 0;
+
+    input {
+      font-size: 14px;
+      height: 45px;
+      width: 100%;
+      border: none;
+      outline: none;
+      padding: 12px 16px;
+      background-color: transparent;
+
+      &::placeholder {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+}

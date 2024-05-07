@@ -1,0 +1,30 @@
+* {
+  justify-content: center;
+}
+
+.register {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  border-radius: 10px;
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  white-space: nowrap;
+  font-size: 100%;
+}
+
+.register:hover {
+  text-decoration: none;
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+}
+
+.forgot_password {
+  background-color: none;
+
+  text-align: center;
+  text-decoration: underline;
+}

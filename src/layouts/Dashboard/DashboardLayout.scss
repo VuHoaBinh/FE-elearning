@@ -1,0 +1,58 @@
+.dashboard-layout {
+  max-width: 1600px;
+  width: 100%;
+  margin: auto;
+
+  // width: 100vw;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  > .dashboard-header {
+    width: 100%;
+    padding: 0;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+  }
+
+  > .dashboard-content {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+
+    position: relative;
+    > .sidebar {
+      height: 100%;
+
+      position: fixed;
+      z-index: 2;
+      top: 0;
+      left: 0;
+    }
+
+    > .content {
+      position: absolute;
+      left: 220px;
+      z-index: 1;
+
+      max-width: 1300px;
+      width: 100%;
+      padding: 100px 30px;
+    }
+  }
+}
+
+@media (max-width: 836px) {
+  .dashboard-layout {
+    > .dashboard-content {
+      > .content {
+        left: 0;
+      }
+    }
+  }
+}

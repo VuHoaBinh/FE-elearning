@@ -1,0 +1,33 @@
+.nav-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+
+  user-select: none;
+
+  > .sidebar-item {
+    width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+
+    cursor: pointer;
+
+    padding: 10px;
+    margin: 0 4px;
+    text-transform: capitalize;
+    text-align: center;
+
+    font-weight: 500;
+    color: #606c77;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid rgb(212, 212, 212);
+    }
+
+    &:hover,
+    &.active {
+      background: rgb(232, 238, 247);
+      color: rgb(73, 129, 217);
+    }
+  }
+}

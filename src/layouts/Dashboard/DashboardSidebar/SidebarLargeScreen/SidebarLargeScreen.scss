@@ -1,0 +1,19 @@
+.dashboard-sidebar {
+  padding-top: 80px;
+
+  background: white;
+  max-width: 220px;
+  height: 100%;
+
+  .content-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+// @media (max-width: 836px) {
+//   .dashboard-sidebar {
+//     display: none;
+//   }
+// }

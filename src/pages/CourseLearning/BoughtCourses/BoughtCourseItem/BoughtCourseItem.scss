@@ -1,0 +1,66 @@
+.my-course-item {
+  min-width: 310px;
+  max-height: 350px;
+  width: 22%;
+  height: 100%;
+  > .course-thumbnail {
+    max-width: 300px;
+    cursor: pointer;
+
+    &:hover {
+      > img {
+        opacity: 0.9;
+      }
+    }
+  }
+  > .course-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    line-height: 22px;
+
+    padding: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 6px;
+    > .name {
+      font-weight: 700;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      cursor: pointer;
+    }
+    > .progress-learning {
+      height: 18px;
+      width: 100%;
+      background: rgb(255, 137, 137);
+
+      font-size: 14px;
+      color: white;
+      font-weight: 600;
+
+      border-radius: 16px;
+
+      position: relative;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      > .progress-number {
+        z-index: 2;
+      }
+
+      &.nonView {
+        background: rgb(255, 137, 137);
+      }
+
+      > .percent {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgb(89, 0, 255);
+        border-radius: 16px;
+      }
+    }
+  }
+}

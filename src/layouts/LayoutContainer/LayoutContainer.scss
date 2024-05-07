@@ -1,0 +1,76 @@
+.layout-container {
+  width: 100vw;
+  min-height: 100vh;
+
+  position: relative;
+
+  .body-container {
+    padding-bottom: 64px;
+  }
+  .support .hotline-text {
+    display: none;
+    position: absolute;
+    top: 22%;
+    left: -104%;
+    background-color: #242121;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  .support {
+    position: fixed;
+    border-radius: 10px;
+    padding: 15px;
+    right: 64px;
+    bottom: 55px;
+    z-index: 999;
+    background-color: #2d73dd;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .support:hover .hotline-text {
+    display: block;
+  }
+  .support-items {
+    position: fixed;
+    border-radius: 10px;
+    padding: 15px;
+    right: 62px;
+    bottom: 111px;
+    z-index: 999;
+    background-color: #2d73dd;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 1283px) {
+  .support:hover .hotline-text {
+    display: block;
+  }
+  .social-media {
+    width: 100%;
+  }
+}
+@media (max-width: 957px) {
+  .support:hover .hotline-text {
+    display: block;
+  }
+  .social-media {
+    width: 100%;
+  }
+}
+@media (max-width: 630px) {
+  .support:hover .hotline-text {
+    display: block;
+  }
+  .social-media {
+    .icon-socialMedia {
+      margin-top: 10px;
+      margin-left: -5px;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.link-navigate {
+  display: flex;
+  gap: 50px;
+
+  > a {
+    font-size: 16px;
+    color: black;
+
+    &.active {
+      color: red;
+      font-weight: 500;
+    }
+  }
+}

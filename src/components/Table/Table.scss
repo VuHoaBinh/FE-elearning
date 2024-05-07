@@ -1,0 +1,25 @@
+.table-container {
+  min-height: 500px;
+  min-width: 600px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  > .title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  > .btns {
+    display: flex;
+    flex-direction: column;
+
+    > .handle,
+    .search {
+      margin-top: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}

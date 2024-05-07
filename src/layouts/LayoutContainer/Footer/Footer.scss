@@ -1,0 +1,36 @@
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  padding: 30px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  &-description {
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+
+    > .introduction,
+    .contact {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .footer {
+    padding: 20px;
+    &-description {
+      gap: 50px;
+    }
+  }
+}

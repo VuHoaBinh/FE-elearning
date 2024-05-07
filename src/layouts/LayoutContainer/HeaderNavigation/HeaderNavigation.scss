@@ -1,0 +1,15 @@
+.link-scroll {
+  cursor: pointer;
+  font-size: 16px;
+  color: black;
+  user-select: none;
+  padding: 7px;
+  &:hover {
+    background-color: rgb(243, 246, 246);
+    border-radius: 7px;
+    opacity: 1;
+  }
+  &.active {
+    color: red;
+  }
+}

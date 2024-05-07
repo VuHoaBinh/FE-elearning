@@ -1,0 +1,9 @@
+@media (max-width: 430px) {
+  .register-form {
+    flex-direction: column;
+  }
+  .extra-links {
+    display: flex;
+    justify-content: space-between;
+  }
+}

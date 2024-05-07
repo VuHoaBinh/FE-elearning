@@ -1,0 +1,23 @@
+.account-popup {
+  position: relative;
+
+  > .account-popover {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    z-index: 2;
+    position: absolute;
+
+    top: calc(100% + 10px);
+    right: calc(100% - 60px);
+
+    > .divider {
+      margin: 10px 0;
+      height: 1px;
+      width: 100%;
+      background: rgb(205, 198, 198);
+    }
+  }
+}
